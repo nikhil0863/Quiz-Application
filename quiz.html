@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-weight: 300;
+        box-sizing: border-box;
+        font-family: 'Gentium Plus', serif;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    .container{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgb(225, 254, 254);
+        display: grid;
+        place-items: center;
+    }
+    .innercontainer{
+        background-color: white;
+        padding: 3rem 8rem;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.4);
+        width: 50vw;
+    }
+    .innercontainer h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 10px 0 40px 0;
+
+
+    }
+    .innercontainer li{
+        font-size: 2rem;
+        margin-top: 15px;
+        list-style: none;
+    }
+    input{
+        cursor: pointer;
+    }
+    #submit,
+    .btn{
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        outline: 0px;
+        display: block;
+        margin: auto;
+        color: white;
+        background-color: rgb(118, 234, 255);
+        margin-top: 4rem;
+        border: none;
+        cursor: pointer;
+    }
+    #submit:hover{
+        background-color: rgb(61, 212, 246);
+    }
+    #showScore{
+        margin-top: 3rem;
+        padding: 3rem 4rem;
+        box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.4);
+        background-color: rgb(243, 243, 243);
+    }
+    .scorearea{
+        display: none;
+    }
+    #showScore h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    #showScore .btn{
+        margin-top: 20px;
+        color: black;
+        background-color: rgb(100, 234, 138);
+        cursor: pointer;
+    }
+    #showScore .btn:hover{
+        background-color: rgb(93, 219, 34);
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="innercontainer">
+            <h1 class="questions">Qustions space</h1>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="asn1" id="option1"> my first choice</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="asn1" id="option2"> my first choice</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="asn1" id="option3"> my first choice</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="asn1" id="option4"> my first choice</label>
+                </li>
+            </ul>
+            <button id="submit" >Submit</button>
+            <div id="showScore" class="scorearea"> Random words </div> 
+        </div>
+    </div>
+
+
+    <script src="/Quiz/quiz.js"></script>
+</body>
+</html>
